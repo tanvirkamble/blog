@@ -15,8 +15,8 @@ Features
 Installation
  Clone the repository using the following command:
 - bash: git clone https://github.com/tanvirkamble/blog.git
- Install the required dependencies by running: npm install
- Create a MongoDB database and update the connection URL in the app.js  
+- Install the required dependencies by running: npm install
+- Create a MongoDB database and update the connection URL in the app.js  
  file: mongoose.connect('your-mongodb-connection-url')
  
 Usage
