@@ -20,7 +20,9 @@ Installation
  file: mongoose.connect('your-mongodb-connection-url')
  
 Usage
+
 1.Start the server by running: node app.js
+
 2.Access the blog website by navigating to http://localhost:3000 in your web browser.
 
 3.Home Page:
