@@ -2,7 +2,7 @@
 
 - Welcome to my personal blog repository! This repository contains the source code for my personal blog website. The blog is built using Node.js, Express, EJS, and MongoDB.
 
-Features
+# Features
 - Home page displaying a collection of blog posts
 - Individual blog post pages with unique URLs
 - About page providing information about the author and the blog's     
@@ -12,14 +12,14 @@ Features
 - Ability to delete blog posts
 - Responsive design for optimal viewing on different devices
 
-Installation
+# Installation
  Clone the repository using the following command:
 - bash: git clone https://github.com/tanvirkamble/blog.git
 - Install the required dependencies by running: npm install
 - Create a MongoDB database and update the connection URL in the app.js  
  file: mongoose.connect('your-mongodb-connection-url')
  
-Usage
+# Usage
 
 1.Start the server by running: node app.js
 
@@ -53,10 +53,10 @@ Usage
 - Click on the "Delete" button associated with that post.
 - The post will be deleted from the database and will no longer appear on the home page.
 
-Contributing
+# Contributing
 - Contributions to this blog repository are welcome! If you find any bugs, have suggestions for improvements, or want to add new features, please feel free to submit a pull request.
 
-Contact
+# Contact
 - If you have any questions or want to connect, you can reach me at tanukamble22@gmail.com. 
 
 You can also visit my personal website [here](https://tanvir-blog.onrender.com).
