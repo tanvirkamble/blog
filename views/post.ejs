@@ -1,13 +1,30 @@
 <%- include("partials/header"); -%>
 
-  <h1>
-    <%=title%>
-  </h1>
-  <p>
-    <%=content%>
-  </p>
-  <form action="/posts/<%= id %>?_method=DELETE" method="post">
-    <button> DELETE </button>
-  </form>
+  <div class="post-container">
+    <h1 class="post-title">
+      <%= title %>
+    </h1>
+
+    <div class="post-meta">
+      <span class="post-date">Posted on: <%= new Date().toLocaleDateString() %></span>
+      <span class="post-tags">Tag:
+        <% tags.forEach(tag=> { %>
+          <span class="post-tag">
+            <%= tag %>
+          </span>
+          <%= tag !==tags[tags.length - 1] ? ', ' : '' %>
+            <% }); %>
+      </span>
+    </div>
+
+
+    <div class="post-content">
+      <%= content %>
+    </div>
+
+    <form action="/posts/<%= id %>?_method=DELETE" method="post" class="delete-form">
+      <button class="delete-button">DELETE</button>
+    </form>
+  </div>
 
   <%- include("partials/footer"); -%>

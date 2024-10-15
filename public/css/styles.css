@@ -4,37 +4,215 @@ html {
 }
 
 .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
 }
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
 }
 
 .footer-padding {
-	padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1abc9c;
 }
 
 .footer p {
-	margin-top: 25px;
-	font-size: 12px;
+  margin-top: 25px;
+  font-size: 12px;
   color: #fff;
+}
+
+.filter-section {
+  background-color: #f9f9f9; /* Light gray background for the filter section */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the section */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  margin: 20px 0; /* Margin above and below the section */
+}
+
+.filter-section h2 {
+  color: #333; /* Darker color for the heading */
+  font-family: 'Arial', sans-serif; /* Font for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.filter-form {
+  display: flex; /* Flexbox for aligning elements */
+  align-items: center; /* Center items vertically */
+}
+
+.filter-select {
+  padding: 10px; /* Padding inside the select element */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin-right: 10px; /* Space between select and button */
+  flex-grow: 1; /* Allow select to grow */
+  font-size: 16px; /* Font size for select options */
+}
+
+.filter-button {
+  background-color: #1abc9c; /* Primary button color */
+  color: #fff; /* White text color */
+  padding: 10px 15px; /* Padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button text */
+  transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+.filter-button:hover {
+  background-color: #156353; /* Darker blue on hover */
+}
+
+.posts-container {
+  display: flex; /* Use Flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  justify-content: space-between; /* Space between cards */
+  margin: 20px 0; /* Margin above and below the container */
+}
+
+.post-card {
+  background-color: #fff; /* White background for posts */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding inside the post */
+  margin: 10px; /* Margin around each card */
+  width: calc(30% - 20px); /* Set width and adjust for margin */
+  transition: transform 0.2s; /* Smooth transition on hover */
+}
+
+.post-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.post-title {
+  font-size: 1.5rem; /* Larger font for the title */
+  color: #333; /* Dark text color */
+  margin: 0; /* Remove default margin */
+}
+
+.post-tags {
+  color: #555; /* Slightly lighter color for tags */
+  font-size: 0.9rem; /* Smaller font size */
+  margin: 10px 0; /* Margin above and below tags */
+}
+
+.post-content {
+  color: #666; /* Gray color for content */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.5; /* Better line height for readability */
+}
+
+.read-more {
+  display: inline-block; /* Make it block for better click area */
+  margin-top: 10px; /* Space above the link */
+  color: #1abc9c; /* Primary color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+.read-more:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Use a clean font */
+  line-height: 1.6; /* Improve line spacing */
+  background-color: #f4f4f4; /* Light background for the body */
+  color: #333; /* Dark text for contrast */
+  margin: 0;
+  padding: 20px; /* Padding around the body */
+}
+
+.post-container {
+  background-color: #ffffff; /* White background for the post */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px; /* Padding inside the post */
+  margin: 20px auto; /* Center the post */
+  max-width: 800px; /* Maximum width for the post */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.post-container:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.post-title {
+  font-size: 2.5rem; /* Larger font size for the title */
+  color: #2c3e50; /* Dark blue-gray for the title */
+  margin: 0 0 10px; /* Margin below the title */
+}
+
+.post-meta {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between date and tags */
+  flex-direction: column; /* Stack elements vertically */
+  margin-bottom: 15px; /* Margin below meta information */
+  font-size: 0.9rem; /* Smaller font size for meta */
+  color: #7f8c8d; /* Gray color for meta text */
+}
+
+.post-content {
+  font-size: 1.2rem; /* Standard font size for content */
+  color: #34495e; /* Darker color for content */
+  line-height: 1.7; /* Improved line height for readability */
+}
+
+.delete-form {
+  margin-top: 20px; /* Margin above the form */
+}
+
+.delete-button {
+  background-color: #e74c3c; /* Red background for delete button */
+  color: #ffffff; /* White text for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for the button */
+  padding: 10px 15px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Standard font size for button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.post-tags {
+  font-size: 0.9rem; /* Smaller font size for meta */
+  color: #7f8c8d; /* Gray color for meta text */
+}
+
+.post-tags {
+  font-size: 0.9rem; /* Smaller font size for meta */
+  color: #7f8c8d; /* Gray color for meta text */
+}
+
+.post-tag {
+  background-color: #e1f5fe; /* Light blue background for tags */
+  border-radius: 5px; /* Rounded corners for tags */
+  padding: 5px 10px; /* Padding for tags */
+  display: inline-block; /* Inline block for proper spacing */
+  font-weight: bold; /* Bold font for emphasis */
+  color: #00796b; /* Darker teal color for text */
+  margin-left: 5px; /* Optional: space between tags */
 }

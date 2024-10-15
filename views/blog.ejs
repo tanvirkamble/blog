@@ -1,0 +1,21 @@
+<%- include("partials/header"); -%>
+    <h1>BLOG</h1>
+
+    <div class="posts-container">
+        <% posts.forEach(function(post){ %>
+            <div class="post-card">
+                <h1 class="post-title">
+                    <%= post.blogtitle %>
+                </h1>
+                <h5 class="post-tags">
+                    <%= post.tags.join(', ') %>
+      </h5>
+      <p class="post-content">
+        <%= post.blogcontent.substring(0, 300) + " ..." %>
+        <a href="/posts/<%= post._id %>" class="read-more">Read More</a>
+      </p>
+    </div>
+  <% }) %>
+</div>
+
+<%- include("partials/footer"); -%>

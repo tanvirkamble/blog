@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+    <h1>Filtered Posts by Tag: <%= selectedTag %>
+    </h1>
+
+    <% console.log('Postsd for' + selectedTag , posts ); // Log the posts array %>
+
+        <% if (posts && posts.length> 0) { %>
+            <ul>
+                <% posts.forEach(function(post) { %>
+                    <li>
+                        <h2><a href="/posts/<%= post._id %>">
+                                <%= post.blogtitle %>
+                            </a></h2>
+                        <p>
+                            <%= post.blogcontent.substring(0, 100) + '...' %>
+                                <a href="/posts/<%= post._id %>">Read More</a>
+
+                        </p>
+                        <p><strong>Tags:</strong>
+                            <%= post.tags.join(', ') %></p>
+            </li>
+        <% }); %>
+    </ul>
+<% } else { %>
+    <p>No posts found for this tag.</p>
+<% } %>
+
+<%- include("partials/footer"); -%>

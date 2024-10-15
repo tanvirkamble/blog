@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+
+  <!-- Filter Section -->
+  <div class="filter-section">
+    <h2>Filter by Tags</h2>
+    <form action="/home" method="GET" class="filter-form">
+      <select name="tag" id="tag" class="filter-select">
+        <option value="">Select a tag</option>
+        <% tags.forEach(function(tag) { %>
+          <option value="<%= tag %>">
+            <%= tag %>
+          </option>
+          <% }) %>
+      </select>
+      <button type="submit" class="filter-button">Filter</button>
+    </form>
+  </div>
+
+
+  <%- include("partials/footer"); -%>
